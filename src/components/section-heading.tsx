@@ -31,7 +31,12 @@ export function SectionHeading({
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`section-label ${isCenter ? "mx-auto justify-center" : ""}`}
       >
-        {index && <span>{index}</span>}
+        {index && (
+          <>
+            <span>{index}</span>
+            <span className="section-label-dash" aria-hidden="true" />
+          </>
+        )}
         <span>{label}</span>
       </motion.div>
 
@@ -44,7 +49,13 @@ export function SectionHeading({
           isCenter ? "mx-auto" : ""
         }`}
       >
-        {line1} {line2 && <span className="accent">{line2}</span>}
+        {line1}
+        {line2 && (
+          <>
+            {" "}
+            <span className="accent">{line2}</span>
+          </>
+        )}
       </motion.h2>
 
       {subheading && (
