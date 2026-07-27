@@ -81,7 +81,7 @@ function JourneyCard({
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className={`ml-10 lg:ml-0 ${
-          isLeft ? "lg:pr-12 lg:text-right" : "lg:col-start-2 lg:pl-12"
+          isLeft ? "lg:pr-12" : "lg:col-start-2 lg:pl-12"
         }`}
       >
         <article className="lift group overflow-hidden rounded-2xl border border-line bg-white shadow-[0_18px_44px_-26px_rgba(14,42,34,0.35)]">
@@ -97,7 +97,7 @@ function JourneyCard({
               </span>
             </div>
             <div className="flex-1 p-5 sm:p-6">
-              <div className={`flex items-center gap-2 ${isLeft ? "lg:justify-end" : ""}`}>
+              <div className="flex items-center gap-2">
                 <span className="font-serif text-2xl font-bold text-gold">
                   {item.year}
                 </span>

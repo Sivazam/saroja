@@ -33,18 +33,16 @@ export function Events() {
                   src={c.src}
                   alt={c.caption}
                   className="aspect-[3/4] w-full object-cover"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <Newspaper className="h-3 w-3 text-gold" />
-                  <span className="text-[0.58rem] font-semibold uppercase tracking-[0.14em] text-cream">
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/90 via-forest-ink/10 to-transparent" />
+                <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5">
+                  <Newspaper className="h-3 w-3 shrink-0 text-gold" />
+                  <span className="text-[0.55rem] font-semibold uppercase leading-tight tracking-[0.12em] text-cream">
                     {c.caption}
                   </span>
                 </div>
               </div>
-              <figcaption className="mt-2 px-1 pb-1 text-[0.62rem] font-medium leading-snug text-slate-soft">
-                {c.caption}
-              </figcaption>
             </motion.figure>
           ))}
         </div>

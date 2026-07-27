@@ -98,10 +98,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 3.8 }}
-            className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-5 border-t border-line pt-6"
+            className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-5 border-t border-line pt-6"
           >
             {h.stats.map((s, i) => (
-              <div key={s.id} className="flex items-center gap-8">
+              <div key={s.id} className="flex items-center gap-x-6">
                 {i > 0 && <span className="hidden h-10 w-px bg-line sm:block" />}
                 <div>
                   <div

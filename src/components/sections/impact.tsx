@@ -22,8 +22,8 @@ const icons: Record<string, LucideIcon> = {
 export function Impact() {
   const imp = profile.impact;
   return (
-    <section id="impact" className="argyle-pattern relative overflow-hidden py-24 lg:py-32">
-      <div className="pointer-events-none absolute inset-0 bg-forest-gradient opacity-90" />
+    <section id="impact" className="bg-forest-gradient relative overflow-hidden py-24 lg:py-32">
+      <div className="argyle-pattern pointer-events-none absolute inset-0 opacity-40" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <SectionHeading
           index={imp.index}
@@ -48,7 +48,7 @@ export function Impact() {
                 className="lift glass relative overflow-hidden rounded-2xl p-6 lg:p-7"
               >
                 {/* watermark numeral */}
-                <span className="pointer-events-none absolute -right-2 -top-4 font-serif text-[6rem] font-bold leading-none text-gold/10">
+                <span className="pointer-events-none absolute -right-2 -top-4 font-serif text-[6rem] font-bold leading-none text-gold/15">
                   {s.id}
                 </span>
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold/15 text-gold">
