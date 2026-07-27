@@ -50,7 +50,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 3.44 }}
-            className="mt-6 max-w-xl font-serif text-lg italic leading-relaxed text-ink/80 sm:text-xl"
+            className="mt-6 max-w-xl font-serif text-lg italic leading-relaxed text-ink sm:text-xl"
           >
             {h.intro}
           </motion.p>

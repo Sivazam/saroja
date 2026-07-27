@@ -90,7 +90,7 @@ export function LoadingScreen() {
             <span className="font-serif text-xl font-semibold text-gold">%</span>
           </div>
 
-          <p className="mt-6 text-[0.6rem] font-medium uppercase tracking-[0.3em] text-cream/40">
+          <p className="mt-6 text-[0.6rem] font-medium uppercase tracking-[0.3em] text-cream/60">
             Loading the journey
           </p>
         </motion.div>

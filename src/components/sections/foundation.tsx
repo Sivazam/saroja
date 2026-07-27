@@ -40,7 +40,7 @@ export function Foundation() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 0.6, delay: i * 0.08 }}
-                  className="text-base leading-relaxed text-ink/80 sm:text-lg"
+                  className="text-base leading-relaxed text-ink sm:text-lg"
                 >
                   {p}
                 </motion.p>

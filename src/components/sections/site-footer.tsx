@@ -24,7 +24,7 @@ export function SiteFooter() {
                 </div>
               </div>
             </div>
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/65">
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/80">
               India&apos;s 4th &amp; Andhra Pradesh&apos;s youngest Mayor. A journey of
               courage, conviction, and service to the people of Andhra Pradesh.
             </p>
@@ -104,10 +104,10 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-cream/10 pt-6 sm:flex-row">
-          <p className="text-xs text-cream/50">
+          <p className="text-xs text-cream/60">
             © {new Date().getFullYear()} {profile.fullName}. All rights reserved.
           </p>
-          <p className="text-xs text-cream/50">
+          <p className="text-xs text-cream/60">
             Built with integrity · A movement of service
           </p>
           <a

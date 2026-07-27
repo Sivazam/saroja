@@ -60,7 +60,7 @@ export function Impact() {
                 <div className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold">
                   {s.label}
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-cream/65">
+                <p className="mt-3 text-sm leading-relaxed text-cream/80">
                   {s.description}
                 </p>
               </motion.div>
