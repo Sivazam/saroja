@@ -9,7 +9,6 @@ import { SectionHeading } from "@/components/section-heading";
 export function Gallery() {
   const g = profile.gallery;
   const [active, setActive] = useState<number | null>(null);
-  const categories = ["All", ...Array.from(new Set(g.items.map((i) => i.category)))];
 
   return (
     <section id="gallery" className="bg-cream-warm py-24 lg:py-32">
