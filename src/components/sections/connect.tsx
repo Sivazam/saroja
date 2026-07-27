@@ -48,7 +48,7 @@ export function Connect() {
             <h3 className="font-serif text-xl font-bold text-forest">
               Send a message
             </h3>
-            <p className="mt-1 text-sm text-slate-soft">
+            <p className="mt-1 text-sm font-medium text-ink-soft">
               Invite Saroja to an event, request support, or join the movement.
             </p>
             <form
@@ -83,7 +83,7 @@ export function Connect() {
                 placeholder="How can we help?"
               />
               <div>
-                <label className="mb-1.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-gold-text">
+                <label className="mb-1.5 block text-[0.62rem] font-bold uppercase tracking-[0.16em] text-gold-ink">
                   Message
                 </label>
                 <textarea
@@ -91,12 +91,12 @@ export function Connect() {
                   rows={4}
                   required
                   placeholder="Your message…"
-                  className="w-full resize-none rounded-xl border border-line bg-cream-warm/40 px-4 py-3 text-sm text-ink outline-none transition-colors placeholder:text-slate-soft/60 focus:border-gold focus:bg-white"
+                  className="w-full resize-none rounded-xl border border-line bg-cream-warm/50 px-4 py-3 text-sm font-medium text-ink outline-none transition-colors placeholder:text-ink-soft/50 focus:border-gold focus:bg-white"
                 />
               </div>
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-forest px-6 py-3.5 text-sm font-semibold text-cream shadow-[0_14px_30px_-10px_rgba(27,77,62,0.6)] transition-all hover:bg-forest-deep sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-br from-forest to-forest-deep px-6 py-4 text-sm font-bold text-cream shadow-[0_14px_30px_-10px_rgba(27,77,62,0.6)] ring-1 ring-gold/30 transition-all hover:shadow-[0_18px_36px_-10px_rgba(27,77,62,0.7)] hover:ring-gold/50 sm:w-auto"
               >
                 <Send className="h-4 w-4" />
                 Send Message
@@ -119,17 +119,17 @@ function ContactRow({
   lines: string[];
 }) {
   return (
-    <div className="lift flex items-start gap-4 rounded-2xl border border-line bg-white/70 p-5">
-      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-forest text-cream">
+    <div className="lift flex items-start gap-4 rounded-2xl border border-line bg-white p-5 shadow-sm">
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-forest to-forest-deep text-gold-bright ring-1 ring-gold/20">
         <Icon className="h-5 w-5" />
       </span>
       <div>
-        <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-text">
+        <div className="text-[0.62rem] font-bold uppercase tracking-[0.18em] text-gold-ink">
           {label}
         </div>
         <div className="mt-1 space-y-0.5">
           {lines.map((l, i) => (
-            <div key={i} className="text-sm font-medium text-ink">
+            <div key={i} className="text-sm font-semibold text-ink">
               {l}
             </div>
           ))}
@@ -152,7 +152,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="mb-1.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-gold-text">
+      <label className="mb-1.5 block text-[0.62rem] font-bold uppercase tracking-[0.16em] text-gold-ink">
         {label}
       </label>
       <input
@@ -160,7 +160,7 @@ function Field({
         type={type}
         required
         placeholder={placeholder}
-        className="w-full rounded-xl border border-line bg-cream-warm/40 px-4 py-3 text-sm text-ink outline-none transition-colors placeholder:text-slate-soft/60 focus:border-gold focus:bg-white"
+        className="w-full rounded-xl border border-line bg-cream-warm/50 px-4 py-3 text-sm font-medium text-ink outline-none transition-colors placeholder:text-ink-soft/50 focus:border-gold focus:bg-white"
       />
     </div>
   );

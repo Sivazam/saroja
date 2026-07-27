@@ -27,13 +27,13 @@ export function About() {
                 alt="Saroja Polasapalli engaging with constituents"
                 className="aspect-[4/5] w-full rounded-[1.1rem] object-cover"
               />
-              <div className="absolute left-4 top-4 rounded-lg bg-white/95 px-3 py-1.5 text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-forest shadow">
+              <div className="absolute left-4 top-4 rounded-lg bg-white px-3 py-1.5 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-forest shadow-md ring-1 ring-forest/10">
                 {a.badge}
               </div>
             </div>
             {/* floating quote chip */}
-            <div className="absolute -bottom-6 -right-4 hidden max-w-[14rem] rounded-2xl bg-forest px-5 py-4 text-cream shadow-xl sm:block">
-              <p className="font-serif text-sm italic leading-relaxed">
+            <div className="absolute -bottom-6 -right-4 hidden max-w-[14rem] rounded-2xl bg-gradient-to-br from-forest to-forest-deep px-5 py-4 text-cream shadow-xl ring-1 ring-gold/30 sm:block">
+              <p className="font-serif text-sm italic leading-relaxed text-cream">
                 “A clean record is the only answer I have ever owed the public.”
               </p>
             </div>
@@ -75,16 +75,16 @@ export function About() {
                 return (
                   <div
                     key={f.label}
-                    className="flex items-start gap-3 rounded-xl border border-line bg-white/60 p-3.5"
+                    className="flex items-start gap-3 rounded-xl border border-line bg-white p-3.5 shadow-sm"
                   >
-                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cream-warm text-forest">
+                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-forest text-gold-bright">
                       <Icon className="h-4 w-4" />
                     </span>
                     <div>
-                      <div className="text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gold-text">
+                      <div className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-gold-ink">
                         {f.label}
                       </div>
-                      <div className="mt-0.5 text-sm font-medium text-ink">
+                      <div className="mt-0.5 text-sm font-semibold text-ink">
                         {f.value}
                       </div>
                     </div>

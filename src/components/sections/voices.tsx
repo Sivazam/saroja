@@ -31,15 +31,17 @@ export function Voices() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.65, delay: i * 0.08 }}
-              className="lift relative overflow-hidden rounded-2xl border border-gold/25 bg-forest-ink/50 p-7 lg:p-8"
+              className="lift relative overflow-hidden rounded-2xl border border-gold-bright/40 bg-forest-ink/70 p-7 shadow-[0_18px_44px_-22px_rgba(0,0,0,0.5)] lg:p-8"
             >
-              <Quote className="h-9 w-9 text-gold-bright/60" />
+              {/* gold accent left bar */}
+              <span className="absolute inset-y-0 left-0 w-1.5 bg-gradient-to-b from-gold-bright via-gold to-transparent" />
+              <Quote className="h-10 w-10 text-gold-bright" />
               <blockquote className="mt-4 font-serif text-xl italic leading-relaxed text-cream lg:text-2xl">
                 {q.text}
               </blockquote>
               <figcaption className="mt-5 flex items-center gap-3">
-                <span className="h-px w-8 bg-gold-bright" />
-                <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-gold-bright">
+                <span className="h-0.5 w-10 bg-gold-bright" />
+                <span className="text-[0.7rem] font-bold uppercase tracking-[0.18em] text-gold-bright">
                   {q.context}
                 </span>
               </figcaption>

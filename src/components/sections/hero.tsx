@@ -60,7 +60,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 3.56 }}
-            className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-medium text-slate-soft"
+            className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-semibold text-ink-soft"
           >
             {h.roles.map((role, i) => (
               <li key={role} className="flex items-center gap-3">
@@ -79,14 +79,14 @@ export function Hero() {
           >
             <a
               href="#journey"
-              className="group inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-sm font-semibold text-cream shadow-[0_14px_30px_-10px_rgba(27,77,62,0.6)] transition-all hover:bg-forest-deep hover:shadow-[0_18px_36px_-10px_rgba(27,77,62,0.7)]"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-forest to-forest-deep px-7 py-4 text-sm font-bold text-cream shadow-[0_16px_34px_-10px_rgba(27,77,62,0.65)] ring-1 ring-gold/30 transition-all hover:shadow-[0_22px_44px_-12px_rgba(27,77,62,0.8)] hover:ring-gold/50"
             >
               {h.primaryCta}
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             </a>
             <a
               href="#connect"
-              className="inline-flex items-center gap-2 rounded-full border-2 border-forest/40 bg-transparent px-6 py-3.5 text-sm font-semibold text-forest transition-all hover:border-forest hover:bg-forest hover:text-cream"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-forest bg-white px-7 py-4 text-sm font-bold text-forest shadow-[0_10px_24px_-12px_rgba(27,77,62,0.4)] transition-all hover:bg-forest hover:text-cream hover:shadow-[0_14px_30px_-12px_rgba(27,77,62,0.6)]"
             >
               <Phone className="h-4 w-4" />
               {h.secondaryCta}
@@ -106,12 +106,12 @@ export function Hero() {
                 <div>
                   <div
                     className={`font-serif text-3xl font-bold ${
-                      i === 1 ? "text-gold-text" : "text-forest"
+                      i === 1 ? "text-gold-ink" : "text-forest"
                     }`}
                   >
                     {s.stat}
                   </div>
-                  <div className="mt-1 max-w-[9rem] text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-soft">
+                  <div className="mt-1 max-w-[9rem] text-[0.62rem] font-bold uppercase tracking-[0.16em] text-ink-soft">
                     {s.label}
                   </div>
                 </div>

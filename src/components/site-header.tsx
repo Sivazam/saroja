@@ -91,9 +91,9 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <a
             href="#connect"
-            className="hidden items-center gap-2 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-cream shadow-[0_8px_22px_-8px_rgba(27,77,62,0.6)] transition-all hover:bg-forest-deep hover:shadow-[0_12px_28px_-8px_rgba(27,77,62,0.7)] sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-gradient-to-br from-forest to-forest-deep px-5 py-2.5 text-sm font-bold text-cream shadow-[0_8px_22px_-8px_rgba(27,77,62,0.6)] ring-1 ring-gold/30 transition-all hover:shadow-[0_12px_28px_-8px_rgba(27,77,62,0.7)] hover:ring-gold/50 sm:inline-flex"
           >
-            <Phone className="h-4 w-4" />
+            <Phone className="h-4 w-4 text-gold-bright" />
             Get In Touch
           </a>
           <button
@@ -130,9 +130,9 @@ export function SiteHeader() {
               <a
                 href="#connect"
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-forest px-5 py-3 text-sm font-semibold text-cream"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-forest to-forest-deep px-5 py-3 text-sm font-bold text-cream ring-1 ring-gold/30"
               >
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 text-gold-bright" />
                 Get In Touch
               </a>
             </nav>

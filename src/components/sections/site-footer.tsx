@@ -34,7 +34,7 @@ export function SiteFooter() {
                   key={i}
                   href="#connect"
                   aria-label="Social link"
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/25 text-cream/85 transition-colors hover:border-gold hover:bg-gold hover:text-forest-ink"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gold-bright/40 bg-forest/50 text-gold-bright transition-colors hover:bg-gold-bright hover:text-forest-ink"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -112,7 +112,7 @@ export function SiteFooter() {
           </p>
           <a
             href="#top"
-            className="inline-flex items-center gap-1.5 rounded-full border border-cream/25 px-3 py-1.5 text-xs text-cream/85 transition-colors hover:border-gold-bright hover:text-gold-bright"
+            className="inline-flex items-center gap-1.5 rounded-full bg-gold-bright px-4 py-2 text-xs font-bold text-forest-ink transition-colors hover:bg-gold"
           >
             Back to top
             <ArrowUp className="h-3.5 w-3.5" />

@@ -92,13 +92,13 @@ function JourneyCard({
                 alt={item.title}
                 className="h-48 w-full object-cover sm:h-full"
               />
-              <span className="absolute left-3 top-3 rounded-full bg-forest/95 px-3 py-1 text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-gold-bright">
+              <span className="absolute left-3 top-3 rounded-full bg-forest px-3 py-1 text-[0.6rem] font-bold uppercase tracking-[0.16em] text-gold-bright shadow-md ring-1 ring-gold-bright/30">
                 {item.tag}
               </span>
             </div>
             <div className="flex-1 p-5 sm:p-6">
               <div className="flex items-center gap-2">
-                <span className="font-serif text-2xl font-bold text-gold-text">
+                <span className="font-serif text-2xl font-bold text-gold-ink">
                   {item.year}
                 </span>
                 <span className="h-px flex-1 bg-line" />
@@ -106,7 +106,7 @@ function JourneyCard({
               <h3 className="mt-2 font-serif text-xl font-bold text-forest">
                 {item.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-soft">
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                 {item.description}
               </p>
             </div>

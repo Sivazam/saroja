@@ -35,10 +35,10 @@ export function Events() {
                   className="aspect-[3/4] w-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/95 via-forest-ink/30 to-transparent" />
-                <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5">
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-ink via-forest-ink/50 to-transparent" />
+                <div className="absolute inset-x-3 bottom-3 flex items-center gap-1.5 rounded-md bg-forest-ink/60 px-2 py-1.5 backdrop-blur-sm">
                   <Newspaper className="h-3 w-3 shrink-0 text-gold-bright" />
-                  <span className="text-[0.55rem] font-semibold uppercase leading-tight tracking-[0.12em] text-cream">
+                  <span className="text-[0.58rem] font-bold uppercase leading-tight tracking-[0.1em] text-cream">
                     {c.caption}
                   </span>
                 </div>

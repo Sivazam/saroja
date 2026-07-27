@@ -51,16 +51,16 @@ export function Foundation() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-7 flex items-center gap-4 rounded-2xl border border-line bg-white/70 p-5"
+              className="mt-7 flex items-center gap-4 rounded-2xl border border-line bg-white p-5 shadow-sm"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-forest text-cream">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-forest to-forest-deep text-gold-bright ring-1 ring-gold/30">
                 <span className="font-serif text-lg font-bold">PSR</span>
               </span>
               <div>
                 <div className="font-serif text-base font-bold text-forest">
                   {f.founder}
                 </div>
-                <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-text">
+                <div className="text-[0.62rem] font-bold uppercase tracking-[0.18em] text-gold-ink">
                   {f.founderRole}
                 </div>
               </div>
@@ -78,15 +78,15 @@ export function Foundation() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.55, delay: i * 0.08 }}
-                  className="lift rounded-2xl border border-line bg-white p-5"
+                  className="lift rounded-2xl border border-line bg-white p-5 shadow-sm"
                 >
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-cream-warm text-forest">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-forest text-gold-bright">
                     <Icon className="h-5 w-5" />
                   </span>
                   <h4 className="mt-4 font-serif text-base font-bold text-forest">
                     {it.title}
                   </h4>
-                  <p className="mt-1.5 text-sm leading-relaxed text-slate-soft">
+                  <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
                     {it.desc}
                   </p>
                 </motion.div>
