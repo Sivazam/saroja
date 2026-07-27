@@ -147,6 +147,9 @@
 .text-gold {
   color: var(--gold);
 }
+.text-gold-bright {
+  color: var(--gold-bright);
+}
 .text-gold-text {
   color: var(--gold-text);
 }
@@ -210,6 +213,16 @@
 .section-label.solo::before {
   display: none;
 }
+/* Dark-background variant: use bright gold so the label is readable on forest bg */
+.section-label.on-dark {
+  color: var(--gold-bright);
+}
+.section-label.on-dark::before,
+.section-label.on-dark::after,
+.section-label.on-dark .section-label-dash {
+  background: var(--gold-bright);
+  opacity: 0.85;
+}
 
 /* Display headline two-tone */
 .display-headline {
@@ -223,6 +236,13 @@
   color: var(--gold);
   font-style: italic;
   font-weight: 600;
+}
+/* Dark-background variant: cream headline + brighter gold accent */
+.display-headline.on-dark {
+  color: var(--cream);
+}
+.display-headline.on-dark .accent {
+  color: var(--gold-bright);
 }
 
 /* Gold pill button */

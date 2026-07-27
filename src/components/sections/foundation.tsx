@@ -111,9 +111,9 @@ export function Foundation() {
                 alt={c.title}
                 className="aspect-[4/5] w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/85 via-forest-ink/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/90 via-forest-ink/20 to-transparent" />
               <div className="absolute inset-x-5 bottom-5">
-                <div className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-gold">
+                <div className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-gold-bright">
                   Foundation
                 </div>
                 <h4 className="mt-1 font-serif text-lg font-bold text-cream">

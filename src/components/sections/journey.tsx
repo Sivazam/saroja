@@ -92,7 +92,7 @@ function JourneyCard({
                 alt={item.title}
                 className="h-48 w-full object-cover sm:h-full"
               />
-              <span className="absolute left-3 top-3 rounded-full bg-forest/90 px-3 py-1 text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-gold">
+              <span className="absolute left-3 top-3 rounded-full bg-forest/95 px-3 py-1 text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-gold-bright">
                 {item.tag}
               </span>
             </div>

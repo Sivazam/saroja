@@ -51,11 +51,11 @@ export function LoadingScreen() {
               transition={{ duration: 1.6, repeat: Infinity, ease: "linear" }}
             />
             <motion.div
-              className="flex h-20 w-20 items-center justify-center rounded-full border border-gold/50 bg-forest-ink/60"
+              className="flex h-20 w-20 items-center justify-center rounded-full border border-gold/60 bg-forest-ink/70"
               animate={{ scale: [1, 1.06, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
-              <span className="font-serif text-3xl font-bold text-gold">S</span>
+              <span className="font-serif text-3xl font-bold text-gold-bright">S</span>
             </motion.div>
           </div>
 
@@ -67,17 +67,17 @@ export function LoadingScreen() {
             className="text-center"
           >
             <h1 className="font-serif text-2xl font-bold text-cream sm:text-3xl">
-              Saroja <span className="text-gold">Polasapalli</span>
+              Saroja <span className="text-gold-bright">Polasapalli</span>
             </h1>
-            <p className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.32em] text-gold/80 sm:text-xs">
+            <p className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.32em] text-gold-bright sm:text-xs">
               Mayor · Leader · Reformer
             </p>
           </motion.div>
 
           {/* Progress bar */}
-          <div className="mt-10 h-px w-60 overflow-hidden bg-cream/15 sm:w-72">
+          <div className="mt-10 h-px w-60 overflow-hidden bg-cream/25 sm:w-72">
             <motion.div
-              className="h-full bg-gradient-to-r from-gold/40 via-gold to-gold-bright"
+              className="h-full bg-gradient-to-r from-gold/50 via-gold to-gold-bright"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -87,10 +87,10 @@ export function LoadingScreen() {
             <span className="font-serif text-4xl font-bold tabular-nums text-cream sm:text-5xl">
               {progress}
             </span>
-            <span className="font-serif text-xl font-semibold text-gold">%</span>
+            <span className="font-serif text-xl font-semibold text-gold-bright">%</span>
           </div>
 
-          <p className="mt-6 text-[0.6rem] font-medium uppercase tracking-[0.3em] text-cream/60">
+          <p className="mt-6 text-[0.6rem] font-medium uppercase tracking-[0.3em] text-cream/75">
             Loading the journey
           </p>
         </motion.div>

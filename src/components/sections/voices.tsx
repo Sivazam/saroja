@@ -31,15 +31,15 @@ export function Voices() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.65, delay: i * 0.08 }}
-              className="lift relative overflow-hidden rounded-2xl border border-gold/15 bg-forest-ink/40 p-7 lg:p-8"
+              className="lift relative overflow-hidden rounded-2xl border border-gold/25 bg-forest-ink/50 p-7 lg:p-8"
             >
-              <Quote className="h-9 w-9 text-gold/40" />
+              <Quote className="h-9 w-9 text-gold-bright/60" />
               <blockquote className="mt-4 font-serif text-xl italic leading-relaxed text-cream lg:text-2xl">
                 {q.text}
               </blockquote>
               <figcaption className="mt-5 flex items-center gap-3">
-                <span className="h-px w-8 bg-gold" />
-                <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-gold">
+                <span className="h-px w-8 bg-gold-bright" />
+                <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-gold-bright">
                   {q.context}
                 </span>
               </figcaption>

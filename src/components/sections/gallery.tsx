@@ -38,9 +38,9 @@ export function Gallery() {
                 className="w-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/85 via-transparent to-transparent opacity-70 transition-opacity group-hover:opacity-90" />
+              <div className="absolute inset-0 bg-gradient-to-t from-forest-ink/90 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100" />
               <div className="absolute inset-x-4 bottom-4 text-left">
-                <div className="text-[0.55rem] font-semibold uppercase tracking-[0.18em] text-gold">
+                <div className="text-[0.55rem] font-semibold uppercase tracking-[0.18em] text-gold-bright">
                   {it.category}
                 </div>
                 <div className="mt-0.5 font-serif text-sm font-bold text-cream">
@@ -75,7 +75,7 @@ export function Gallery() {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
-              className="max-h-[85vh] max-w-3xl overflow-hidden rounded-2xl border border-gold/20 bg-forest"
+              className="max-h-[85vh] max-w-3xl overflow-hidden rounded-2xl border border-gold/30 bg-forest"
             >
               <img
                 src={g.items[active].src}
@@ -86,7 +86,7 @@ export function Gallery() {
                 <span className="font-serif text-base font-bold text-cream">
                   {g.items[active].caption}
                 </span>
-                <span className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold">
+                <span className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold-bright">
                   {g.items[active].category}
                 </span>
               </figcaption>

@@ -86,7 +86,7 @@ export function Hero() {
             </a>
             <a
               href="#connect"
-              className="inline-flex items-center gap-2 rounded-full border border-forest/30 bg-transparent px-6 py-3.5 text-sm font-semibold text-forest transition-all hover:border-forest hover:bg-forest hover:text-cream"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-forest/40 bg-transparent px-6 py-3.5 text-sm font-semibold text-forest transition-all hover:border-forest hover:bg-forest hover:text-cream"
             >
               <Phone className="h-4 w-4" />
               {h.secondaryCta}
@@ -167,7 +167,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 3.85, type: "spring" }}
               className="absolute -bottom-5 -right-3 rounded-2xl bg-forest px-5 py-3 text-center shadow-xl sm:-right-5"
             >
-              <div className="text-[0.5rem] font-semibold uppercase tracking-[0.24em] text-gold">
+              <div className="text-[0.5rem] font-semibold uppercase tracking-[0.24em] text-gold-bright">
                 {h.termLabel}
               </div>
               <div className="font-serif text-base font-bold text-cream">
@@ -191,7 +191,7 @@ export function Hero() {
         <motion.span
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-          className="flex h-9 w-5 items-start justify-center rounded-full border border-slate-soft/50 p-1"
+          className="flex h-9 w-5 items-start justify-center rounded-full border border-forest/40 p-1"
         >
           <span className="h-1.5 w-1 rounded-full bg-gold" />
         </motion.span>

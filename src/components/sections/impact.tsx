@@ -51,16 +51,16 @@ export function Impact() {
                 <span className="pointer-events-none absolute -right-2 -top-4 font-serif text-[6rem] font-bold leading-none text-gold/15">
                   {s.id}
                 </span>
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold/15 text-gold">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold/20 text-gold-bright">
                   <Icon className="h-6 w-6" />
                 </span>
                 <div className="mt-5 font-serif text-4xl font-bold text-cream lg:text-5xl">
                   {s.stat}
                 </div>
-                <div className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold">
+                <div className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-bright">
                   {s.label}
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-cream/80">
+                <p className="mt-3 text-sm leading-relaxed text-cream/85">
                   {s.description}
                 </p>
               </motion.div>
@@ -74,9 +74,9 @@ export function Impact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 flex items-center justify-center gap-2 text-center text-sm text-cream/70"
+          className="mt-12 flex items-center justify-center gap-2 text-center text-sm text-cream/85"
         >
-          <BadgeCheck className="h-4 w-4 text-gold" />
+          <BadgeCheck className="h-4 w-4 text-gold-bright" />
           {imp.trustBadge}
         </motion.div>
       </div>

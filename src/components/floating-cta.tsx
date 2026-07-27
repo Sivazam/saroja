@@ -34,7 +34,7 @@ export function FloatingCTA() {
             href="#connect"
             className="inline-flex items-center gap-2 rounded-full bg-forest px-5 py-3 text-sm font-semibold text-cream shadow-[0_14px_30px_-8px_rgba(27,77,62,0.7)] transition-all hover:bg-forest-deep"
           >
-            <Handshake className="h-4 w-4 text-gold" />
+            <Handshake className="h-4 w-4 text-gold-bright" />
             Get Involved
           </a>
         </motion.div>

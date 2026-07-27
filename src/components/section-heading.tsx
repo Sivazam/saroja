@@ -29,7 +29,9 @@ export function SectionHeading({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`section-label ${isCenter ? "mx-auto justify-center" : ""}`}
+        className={`section-label ${dark ? "on-dark" : ""} ${
+          isCenter ? "mx-auto justify-center" : ""
+        }`}
       >
         {index && (
           <>
@@ -45,7 +47,7 @@ export function SectionHeading({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.05 }}
-        className={`display-headline mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] ${
+        className={`display-headline ${dark ? "on-dark" : ""} mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] ${
           isCenter ? "mx-auto" : ""
         }`}
       >
@@ -65,7 +67,7 @@ export function SectionHeading({
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.12 }}
           className={`mt-5 max-w-2xl text-base leading-relaxed sm:text-lg ${
-            dark ? "text-cream/70" : "text-slate-soft"
+            dark ? "text-cream/85" : "text-slate-soft"
           } ${isCenter ? "mx-auto" : ""}`}
         >
           {subheading}
