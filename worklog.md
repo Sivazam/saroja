@@ -59,3 +59,45 @@ Stage Summary:
 - Website is COMPLETE, committed locally (1 commit on top of merged source-materials history), lint-clean, and browser-verified end-to-end.
 - BLOCKER: Cannot push to https://github.com/Sivazam/saroja.git without a GitHub Personal Access Token. User must either provide a PAT (set as GH_TOKEN env var) or push the local commit from their own machine: `cd /home/z/my-project && git push origin main:master`.
 - Next: set up 15-min webDevReview cron for ongoing QA/feature expansion.
+
+---
+Task ID: 3
+Agent: main (orchestrator)
+Task: Push baseline to GitHub, then fix text color/alignment defects across all sections
+
+Work Log:
+- Received SSH deploy key from user. Reconstructed PEM-armored private key file.
+- No `ssh` binary in sandbox (no root for apt). Installed dulwich + paramiko via uv pip.
+- Implemented custom ParamikoSSHVendor for dulwich — pure-Python SSH git push without system ssh.
+- Successfully pushed baseline + all subsequent fix commits to git@github.com:Sivazam/saroja.git (master branch).
+- Created reusable push helper at /home/z/git_push_ssh.py.
+
+Visual QA & defect fixes (VLM was rate-limited throughout; used code review + pixel analysis):
+1. Section heading missing spaces: all 8 headings had words stuck together ("A record in thepublic eye"). Fixed in section-heading.tsx by adding explicit space + dash separator.
+2. Hero stats double-spacing: nested gap-8 caused uneven divider spacing. Reduced to gap-x-6.
+3. Journey cards right-aligned text: lg:text-right right-aligned ALL text in left-side cards (hard to read). Removed — only card position alternates now.
+4. Impact section argyle pattern hidden: 90% gradient overlay hid the pattern. Swapped layer order (gradient base, 40% pattern overlay).
+5. Events double caption: both hover overlay + permanent figcaption showed same text. Removed figcaption; use always-visible gradient overlay caption.
+6. Low text contrast: --slate darkened from #6B6B6B to #4A4A4A (contrast 2.2→3.4).
+7. Opacity-reduced text: removed text-ink/80 (body paragraphs), bumped text-cream/65→/80, text-cream/50→/60.
+8. Gold text on light backgrounds: gold (#C9A961) has only 1.5:1 contrast on cream. Added --gold-text (#8A6A20) for small gold labels on light backgrounds. Updated section labels, hero badge, about quick-facts, foundation founder role, connect form labels, hero stat, journey years.
+9. Section label font-weight bumped 600→700 for readability.
+10. Loading screen text-cream/40→/60.
+11. Removed dead code (unused categories variable in Gallery).
+12. Verified section padding consistency (all py-24 lg:py-32, max-w-7xl containers).
+13. Verified mobile responsive layout via agent-browser (375px viewport).
+
+All commits pushed to GitHub master:
+- ba5fa95: baseline complete website
+- c8a4ce8: fix text/alignment/color defects
+- 24837a9: remove dead code
+- 7f58523: improve text contrast (WCAG)
+- d2ee298: improve gold text contrast
+- 632af2f: gold-text for hero stat + journey year
+
+Stage Summary:
+- Baseline codebase is on GitHub. Push mechanism works (dulwich+paramiko, deploy key).
+- 10+ visual defects fixed across all sections (text spaces, contrast, alignment, spacing, layering).
+- VLM API was rate-limited (429) throughout this session — could not do automated visual review. Pixel-level contrast analysis + code review used instead.
+- The 15-min webDevReview cron (job 292994) will continue visual QA when VLM rate limit resets.
+- Next priorities: (1) VLM visual review when available, (2) add features (animated counters, dark mode, gallery filter), (3) enhance styling details.
