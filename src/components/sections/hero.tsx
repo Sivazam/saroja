@@ -106,7 +106,7 @@ export function Hero() {
                 <div>
                   <div
                     className={`font-serif text-3xl font-bold ${
-                      i === 1 ? "text-gold" : "text-forest"
+                      i === 1 ? "text-gold-text" : "text-forest"
                     }`}
                   >
                     {s.stat}

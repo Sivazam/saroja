@@ -98,7 +98,7 @@ function JourneyCard({
             </div>
             <div className="flex-1 p-5 sm:p-6">
               <div className="flex items-center gap-2">
-                <span className="font-serif text-2xl font-bold text-gold">
+                <span className="font-serif text-2xl font-bold text-gold-text">
                   {item.year}
                 </span>
                 <span className="h-px flex-1 bg-line" />
