@@ -60,7 +60,7 @@ export function Foundation() {
                 <div className="font-serif text-base font-bold text-forest">
                   {f.founder}
                 </div>
-                <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold">
+                <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-text">
                   {f.founderRole}
                 </div>
               </div>

@@ -57,7 +57,7 @@ export function SiteHeader() {
             <span className="block font-serif text-base font-bold text-forest lg:text-lg">
               Saroja Polasapalli
             </span>
-            <span className="block text-[0.55rem] font-semibold uppercase tracking-[0.24em] text-gold lg:text-[0.62rem]">
+            <span className="block text-[0.55rem] font-semibold uppercase tracking-[0.24em] text-gold-text lg:text-[0.62rem]">
               Mayor · Leader · Reformer
             </span>
           </span>

@@ -55,6 +55,7 @@
   --forest-ink: #0e2a22;
   --gold: #c9a961;
   --gold-bright: #d4af37;
+  --gold-text: #8a6a20;
   --cream: #faf8f5;
   --cream-warm: #f3efe7;
   --ink: #1f2a24;
@@ -146,6 +147,9 @@
 .text-gold {
   color: var(--gold);
 }
+.text-gold-text {
+  color: var(--gold-text);
+}
 .text-ink {
   color: var(--ink);
 }
@@ -179,11 +183,11 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  color: var(--gold);
+  color: var(--gold-text);
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .section-label::before,
 .section-label::after {
@@ -192,7 +196,7 @@
   height: 1px;
   width: 2rem;
   background: var(--gold);
-  opacity: 0.6;
+  opacity: 0.7;
   flex-shrink: 0;
 }
 .section-label .section-label-dash {
@@ -200,7 +204,7 @@
   height: 1px;
   width: 1rem;
   background: var(--gold);
-  opacity: 0.6;
+  opacity: 0.7;
   flex-shrink: 0;
 }
 .section-label.solo::before {

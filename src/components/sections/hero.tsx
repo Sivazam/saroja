@@ -27,7 +27,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 3.2 }}
-            className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/70 px-4 py-1.5 text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-gold"
+            className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/70 px-4 py-1.5 text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-gold-text"
           >
             <Sparkles className="h-3.5 w-3.5" />
             {h.badge}
@@ -139,7 +139,7 @@ export function Hero() {
                 <div className="font-serif text-lg font-bold text-forest">
                   {profile.fullName}
                 </div>
-                <div className="mt-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold">
+                <div className="mt-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-gold-text">
                   M.Sc., Computers · Kakinada Municipal Corporation
                 </div>
               </div>

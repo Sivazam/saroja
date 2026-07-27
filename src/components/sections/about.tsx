@@ -81,7 +81,7 @@ export function About() {
                       <Icon className="h-4 w-4" />
                     </span>
                     <div>
-                      <div className="text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gold">
+                      <div className="text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-gold-text">
                         {f.label}
                       </div>
                       <div className="mt-0.5 text-sm font-medium text-ink">

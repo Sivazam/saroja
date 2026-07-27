@@ -83,7 +83,7 @@ export function Connect() {
                 placeholder="How can we help?"
               />
               <div>
-                <label className="mb-1.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-gold">
+                <label className="mb-1.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-gold-text">
                   Message
                 </label>
                 <textarea
@@ -124,7 +124,7 @@ function ContactRow({
         <Icon className="h-5 w-5" />
       </span>
       <div>
-        <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold">
+        <div className="text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-text">
           {label}
         </div>
         <div className="mt-1 space-y-0.5">
@@ -152,7 +152,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="mb-1.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-gold">
+      <label className="mb-1.5 block text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-gold-text">
         {label}
       </label>
       <input
