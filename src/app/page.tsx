@@ -1,31 +1,38 @@
-'use client'
+"use client";
+
+import { Suspense } from "react";
+import { LoadingScreen } from "@/components/loading-screen";
+import { SiteHeader } from "@/components/site-header";
+import { FloatingCTA } from "@/components/floating-cta";
+import { Hero } from "@/components/sections/hero";
+import { About } from "@/components/sections/about";
+import { Journey } from "@/components/sections/journey";
+import { Impact } from "@/components/sections/impact";
+import { Foundation } from "@/components/sections/foundation";
+import { Voices } from "@/components/sections/voices";
+import { Events } from "@/components/sections/events";
+import { Gallery } from "@/components/sections/gallery";
+import { Connect } from "@/components/sections/connect";
+import { SiteFooter } from "@/components/sections/site-footer";
 
 export default function Home() {
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: '100vh',
-      gap: '2rem',
-      padding: '1rem'
-    }}>
-      <div style={{
-        position: 'relative',
-        width: '6rem',
-        height: '6rem'
-      }}>
-        <img
-          src="/logo.svg"
-          alt="Z.ai Logo"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'contain'
-          }}
-        />
-      </div>
-    </div>
-  )
+    <>
+      <LoadingScreen />
+      <SiteHeader />
+      <main className="flex min-h-screen flex-col">
+        <Hero />
+        <About />
+        <Journey />
+        <Impact />
+        <Foundation />
+        <Voices />
+        <Events />
+        <Gallery />
+        <Connect />
+      </main>
+      <SiteFooter />
+      <FloatingCTA />
+    </>
+  );
 }
